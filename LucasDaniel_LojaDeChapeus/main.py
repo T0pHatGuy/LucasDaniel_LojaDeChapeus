@@ -53,10 +53,9 @@ for indice in range(quantidade_chapeus):
     nome = input("Nome do modelo: ").strip()
     cor = input("Cor: ").strip()
     preco = ler_preco(tipo)
-    estoque = ler_inteiro("Quantidade em estoque: ")
     tamanho = input("Tamanho: ").strip()
     material = ler_material()
-    chapeus.append(FabricaChapeu.criar(tipo, nome, cor, preco, estoque, tamanho, material))
+    chapeus.append(FabricaChapeu.criar(tipo, nome, cor, preco, tamanho, material))
 
 print(cliente)
 print()

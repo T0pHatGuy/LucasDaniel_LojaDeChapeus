@@ -2,8 +2,8 @@ from model.chapeu import Chapeu
 from model.enums import Material
 
 class Cartola(Chapeu):
-    def __init__(self, nome, cor, preco, estoque, tamanho, material):
-        super().__init__(nome, cor, preco, estoque)
+    def __init__(self, nome, cor, preco, tamanho, material):
+        super().__init__(nome, cor, preco)
         self.__tamanho = tamanho
         self.__material = material if isinstance(material, Material) else Material(material)
 
